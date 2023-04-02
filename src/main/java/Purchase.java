@@ -33,7 +33,7 @@ public class Purchase {
         return sum;
     }
 
-    private String getCategory() throws IOException {
+    public String getCategory() throws IOException {
         Map<String, String> categories = new HashMap<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             String s;
